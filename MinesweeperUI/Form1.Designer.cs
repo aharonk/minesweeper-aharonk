@@ -28,161 +28,156 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
-            //this.button1 = new System.Windows.Forms.Button();
-            //this.button2 = new System.Windows.Forms.Button();
-            //this.button3 = new System.Windows.Forms.Button();
-            //this.button4 = new System.Windows.Forms.Button();
-            //this.button5 = new System.Windows.Forms.Button();
-            //this.button6 = new System.Windows.Forms.Button();
-            //this.button7 = new System.Windows.Forms.Button();
-            //this.button8 = new System.Windows.Forms.Button();
-            this.splitContainer1 = new System.Windows.Forms.SplitContainer();
-            this.tableLayoutPanel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).BeginInit();
-            this.splitContainer1.Panel2.SuspendLayout();
-            this.splitContainer1.SuspendLayout();
+            this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.gameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemEasy = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemMedium = new System.Windows.Forms.ToolStripMenuItem();
+            this.menuItemHard = new System.Windows.Forms.ToolStripMenuItem();
+            this.flagChar = new System.Windows.Forms.ToolStripTextBox();
+            this.bombsRemaining = new System.Windows.Forms.ToolStripTextBox();
+            this.timeChar = new System.Windows.Forms.ToolStripTextBox();
+            this.timeElapsed = new System.Windows.Forms.ToolStripTextBox();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
             // 
-            //this.tableLayoutPanel1.ColumnCount = 4;
-            //this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            //this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            //this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            //this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 25F));
-            //this.tableLayoutPanel1.Controls.Add(this.button1, 0, 0);
-            //this.tableLayoutPanel1.Controls.Add(this.button2, 1, 0);
-            //this.tableLayoutPanel1.Controls.Add(this.button3, 2, 0);
-            //this.tableLayoutPanel1.Controls.Add(this.button4, 3, 0);
-            //this.tableLayoutPanel1.Controls.Add(this.button5, 0, 1);
-            //this.tableLayoutPanel1.Controls.Add(this.button6, 1, 1);
-            //this.tableLayoutPanel1.Controls.Add(this.button7, 2, 1);
-            //this.tableLayoutPanel1.Controls.Add(this.button8, 3, 1);
-            this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
-            //this.tableLayoutPanel1.Name = "tableLayoutPanel1";
-            //this.tableLayoutPanel1.RowCount = 2;
-            //this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            //this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 50F));
-            //this.tableLayoutPanel1.Size = new System.Drawing.Size(1302, 1080);
-            //this.tableLayoutPanel1.TabIndex = 0;
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 229F));
+            this.tableLayoutPanel1.Location = new System.Drawing.Point(151, 227);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.tableLayoutPanel1.Name = "tableLayoutPanel1";
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(229, 133);
+            this.tableLayoutPanel1.TabIndex = 0;
             // 
-            // button1
+            // menuStrip1
             // 
-            //this.button1.Dock = System.Windows.Forms.DockStyle.Fill;
-            //this.button1.Location = new System.Drawing.Point(3, 3);
-            //this.button1.Name = "button1";
-            //this.button1.Size = new System.Drawing.Size(319, 534);
-            //this.button1.TabIndex = 0;
-            //this.button1.Text = "button1";
-            //this.button1.UseVisualStyleBackColor = true;
-            //this.button1.Click += new System.EventHandler(this.button_Click);
+            this.menuStrip1.ImageScalingSize = new System.Drawing.Size(20, 20);
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.gameToolStripMenuItem,
+            this.flagChar,
+            this.bombsRemaining,
+            this.timeChar,
+            this.timeElapsed});
+            this.menuStrip1.Location = new System.Drawing.Point(0, 0);
+            this.menuStrip1.Name = "menuStrip1";
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(7, 3, 0, 3);
+            this.menuStrip1.Size = new System.Drawing.Size(914, 33);
+            this.menuStrip1.TabIndex = 1;
+            this.menuStrip1.Text = "menuStrip1";
             // 
-            // button2
+            // gameToolStripMenuItem
             // 
-            //this.button2.Location = new System.Drawing.Point(328, 3);
-            //this.button2.Name = "button2";
-            //this.button2.Size = new System.Drawing.Size(150, 46);
-            //this.button2.TabIndex = 1;
-            //this.button2.Text = "button2";
-            //this.button2.UseVisualStyleBackColor = true;
-            //// 
-            //// button3
-            //// 
-            //this.button3.Location = new System.Drawing.Point(653, 3);
-            //this.button3.Name = "button3";
-            //this.button3.Size = new System.Drawing.Size(150, 46);
-            //this.button3.TabIndex = 2;
-            //this.button3.Text = "button3";
-            //this.button3.UseVisualStyleBackColor = true;
-            //// 
-            //// button4
-            //// 
-            //this.button4.Location = new System.Drawing.Point(978, 3);
-            //this.button4.Name = "button4";
-            //this.button4.Size = new System.Drawing.Size(150, 46);
-            //this.button4.TabIndex = 3;
-            //this.button4.Text = "button4";
-            //this.button4.UseVisualStyleBackColor = true;
-            //// 
-            //// button5
-            //// 
-            //this.button5.Location = new System.Drawing.Point(3, 543);
-            //this.button5.Name = "button5";
-            //this.button5.Size = new System.Drawing.Size(150, 46);
-            //this.button5.TabIndex = 4;
-            //this.button5.Text = "button5";
-            //this.button5.UseVisualStyleBackColor = true;
-            //// 
-            //// button6
-            //// 
-            //this.button6.Location = new System.Drawing.Point(328, 543);
-            //this.button6.Name = "button6";
-            //this.button6.Size = new System.Drawing.Size(150, 46);
-            //this.button6.TabIndex = 5;
-            //this.button6.Text = "button6";
-            //this.button6.UseVisualStyleBackColor = true;
-            //// 
-            //// button7
-            //// 
-            //this.button7.Location = new System.Drawing.Point(653, 543);
-            //this.button7.Name = "button7";
-            //this.button7.Size = new System.Drawing.Size(150, 46);
-            //this.button7.TabIndex = 6;
-            //this.button7.Text = "button7";
-            //this.button7.UseVisualStyleBackColor = true;
-            //// 
-            //// button8
-            //// 
-            //this.button8.Location = new System.Drawing.Point(978, 543);
-            //this.button8.Name = "button8";
-            //this.button8.Size = new System.Drawing.Size(150, 46);
-            //this.button8.TabIndex = 7;
-            //this.button8.Text = "button8";
-            //this.button8.UseVisualStyleBackColor = true;
+            this.gameToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.menuItemEasy,
+            this.menuItemMedium,
+            this.menuItemHard});
+            this.gameToolStripMenuItem.Name = "gameToolStripMenuItem";
+            this.gameToolStripMenuItem.Size = new System.Drawing.Size(62, 27);
+            this.gameToolStripMenuItem.Text = "Game";
             // 
-            // splitContainer1
+            // menuItemEasy
             // 
-            this.splitContainer1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.splitContainer1.Location = new System.Drawing.Point(0, 0);
-            this.splitContainer1.Name = "splitContainer1";
-            this.splitContainer1.Orientation = System.Windows.Forms.Orientation.Horizontal;
+            this.menuItemEasy.Name = "menuItemEasy";
+            this.menuItemEasy.Size = new System.Drawing.Size(224, 26);
+            this.menuItemEasy.Text = "Easy";
+            this.menuItemEasy.Click += new System.EventHandler(this.DifficultyClick);
             // 
-            // splitContainer1.Panel2
+            // menuItemMedium
             // 
-            this.splitContainer1.Panel2.Controls.Add(this.tableLayoutPanel1);
-            this.splitContainer1.Size = new System.Drawing.Size(1302, 1250);
-            this.splitContainer1.SplitterDistance = 166;
-            this.splitContainer1.TabIndex = 1;
+            this.menuItemMedium.Name = "menuItemMedium";
+            this.menuItemMedium.Size = new System.Drawing.Size(224, 26);
+            this.menuItemMedium.Text = "Medium";
+            this.menuItemMedium.Click += new System.EventHandler(this.DifficultyClick);
+            // 
+            // menuItemHard
+            // 
+            this.menuItemHard.Name = "menuItemHard";
+            this.menuItemHard.Size = new System.Drawing.Size(224, 26);
+            this.menuItemHard.Text = "Hard";
+            this.menuItemHard.Click += new System.EventHandler(this.DifficultyClick);
+            // 
+            // flagChar
+            // 
+            this.flagChar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.flagChar.Enabled = false;
+            this.flagChar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.flagChar.Margin = new System.Windows.Forms.Padding(100, 0, 0, 0);
+            this.flagChar.Name = "flagChar";
+            this.flagChar.ReadOnly = true;
+            this.flagChar.Size = new System.Drawing.Size(23, 27);
+            this.flagChar.Text = "🚩";
+            // 
+            // bombsRemaining
+            // 
+            this.bombsRemaining.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.bombsRemaining.Enabled = false;
+            this.bombsRemaining.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.bombsRemaining.Name = "bombsRemaining";
+            this.bombsRemaining.ReadOnly = true;
+            this.bombsRemaining.Size = new System.Drawing.Size(114, 27);
+            this.bombsRemaining.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
+            // 
+            // timeChar
+            // 
+            this.timeChar.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.timeChar.Enabled = false;
+            this.timeChar.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point);
+            this.timeChar.Margin = new System.Windows.Forms.Padding(50, 0, 0, 0);
+            this.timeChar.Name = "timeChar";
+            this.timeChar.ReadOnly = true;
+            this.timeChar.Size = new System.Drawing.Size(22, 27);
+            this.timeChar.Text = "⏱";
+            // 
+            // timeElapsed
+            // 
+            this.timeElapsed.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.timeElapsed.Enabled = false;
+            this.timeElapsed.Margin = new System.Windows.Forms.Padding(0, 0, 1, 0);
+            this.timeElapsed.Name = "timeElapsed";
+            this.timeElapsed.ReadOnly = true;
+            this.timeElapsed.Size = new System.Drawing.Size(114, 27);
+            this.timeElapsed.TextBoxTextAlign = System.Windows.Forms.HorizontalAlignment.Right;
             // 
             // Form1
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1302, 1250);
-            this.Controls.Add(this.splitContainer1);
+            this.ClientSize = new System.Drawing.Size(914, 600);
+            this.Controls.Add(this.tableLayoutPanel1);
+            this.Controls.Add(this.menuStrip1);
+            this.KeyPreview = true;
+            this.MainMenuStrip = this.menuStrip1;
+            this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.Name = "Form1";
-            this.Text = "Form1";
-            this.tableLayoutPanel1.ResumeLayout(false);
-            this.splitContainer1.Panel2.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.splitContainer1)).EndInit();
-            this.splitContainer1.ResumeLayout(false);
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
+            this.Text = "Minesweeper";
+            this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.NewGameShortcut);
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
         #endregion
 
         private TableLayoutPanel tableLayoutPanel1;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
-        private SplitContainer splitContainer1;
+        private MenuStrip menuStrip1;
+        private ToolStripMenuItem gameToolStripMenuItem;
+        private ToolStripMenuItem menuItemEasy;
+        private ToolStripMenuItem menuItemMedium;
+        private ToolStripMenuItem menuItemHard;
+        private ToolStripMenuItem menuItemCustom;
+        private ToolStripTextBox bombsRemaining;
+        private ToolStripTextBox timeElapsed;
+        private ToolStripTextBox flagChar;
+        private ToolStripTextBox timeChar;
+        private ToolStripMenuItem menuItemSave;
+        private ToolStripMenuItem menuItemSaveAs;
+        private ToolStripSeparator toolStripSeparator;
+        private ToolStripMenuItem menuItemOpen;
+        private ToolStripSeparator toolStripSeparator1;
     }
 }
